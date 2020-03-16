@@ -7,9 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "heroku-postbuild": "ng build --prod",
+    "postinstall": "ng build --aot --prod",
     "e2e": "ng e2e"
   },
+
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.14",
@@ -31,8 +32,10 @@
     "ngx-bootstrap": "^5.3.2",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.9.1",
+    "express": "^4.16.3"
   },
+
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.23",
     "@angular/cli": "~8.3.23",
@@ -55,6 +58,7 @@
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
   },
+
   "engines": {
     "node": "13.7.0",
     "npm": "6.13.6"
